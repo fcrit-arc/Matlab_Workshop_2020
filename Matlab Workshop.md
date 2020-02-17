@@ -57,7 +57,7 @@ title('Hue, Saturation and color values');
 - Image binarization
 ```matlab
 % read image
-img = rgb2gray(imread('num_plate.jpg'));
+img = rgb2gray(imread('binarize1.png'));
 
 % binarize
 BW = imbinarize(img);
