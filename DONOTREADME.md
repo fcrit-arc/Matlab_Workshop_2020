@@ -2,18 +2,24 @@
 
 - Import and Export image
 ```matlab
-% read image
-img = imread('nature.jpg');
+% read image - write your code here
+%%
+
+%%
 
 % RGB to Black and white
 img = rgb2gray(img);
 
-% about image
-whos img
-imfinfo('car_view.jpg')
+% about image - write your code here
+%%
 
-% show image
-figure; imshow(img)
+%%
+
+% show image - write your code here
+%%
+
+%%
+
 title('Original image')
 figure; imhist(img)
 title('Original image histogram')
@@ -34,11 +40,16 @@ imwrite (img,'nature_histeq.jpg');
 - Image conversion
 ```matlab
 % read image
-img = imread('peppers.png');
+%%
+
+%%
 
 % image conversion
-% RGB to BW
-bw = rgb2gray(img);
+% RGB to BW - write your code here
+%%
+
+%%
+
 figure; imshowpair(img,bw,'montage');
 title('Original image with Black and White image');
 
@@ -47,9 +58,15 @@ figure; montage({r,g,b},'Size',[1 3]);
 title('Red, Green and Blue components');
 
 % RGB to HSV
-hsv = rgb2hsv(img);
+%%
 
-[h,s,v] = imsplit(hsv);
+%%
+
+% Split image to components - write your code here
+%%
+
+%%
+
 figure; montage({h,s,v},'Size',[1 3]);
 title('Hue, Saturation and color values');
 ```
@@ -59,12 +76,20 @@ title('Hue, Saturation and color values');
 % read image
 img = rgb2gray(imread('num_plate.jpg'));
 
-% binarize
-BW = imbinarize(img);
-% binarize with threshold 50%
-BWthr = imbinarize(img,0.5);
-% binarize adaptively
-BWadap = imbinarize(img,'adaptive');
+% binarize - write your code here
+%%
+
+%%
+
+% binarize with threshold 50% - write your code here
+%%
+
+%%
+
+% binarize adaptively - write your code here
+%%
+
+%%
 
 % show
 figure; imshowpair(img,BW,'montage');
@@ -76,8 +101,16 @@ figure; imshowpair(img,BWadap,'montage');
 ```matlab
 I = imread('cameraman.tif');
 imshow(I)
-tform = affine2d([1 0 0; .5 1 0; 0 0 1])
-J = imwarp(I,tform);
+
+% affine transform - write your code here
+%%
+
+%%
+
+% apply transform - write your code here
+%%
+
+%%
 figure
 imshow(J)
 ```

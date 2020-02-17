@@ -81,3 +81,42 @@ J = imwarp(I,tform);
 figure
 imshow(J)
 ```
+---
+- Creating noisy image
+```matlab
+% read image
+img = imread('peppers.png');
+
+% add noise to image
+noisy = imnoise(img);
+
+% show image
+figure; imshowpair(img,noisy,'montage');
+```
+---
+- Image filtering and enhancement
+
+- image segmentation
+
+- Other preprocessing steps
+
+---
+- Sliding Window Algorithm
+
+---
+- Canny edge detection
+
+```matlab
+% read image
+img = imread('num_plate.jpg');
+
+% RGB to BW
+img = rgb2gray(img);
+
+% canny
+edge1 = edge(img,'canny');
+
+% show image
+figure; imshowpair(img,edge1,'montage');
+```
+
